@@ -1,0 +1,151 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Quanyu PIAO}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{(+86)15624951831}{quanyu.piao@gmail.com}{}{}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+% \section{个人总结}
+% 本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同开放、连接、共享的Web在未来的不可替代性。在校期间长期从事可视分析(Web的2D/3D时空可视化)相关研究，对Web技术发展趋势及前端工程化解决方案有浓厚兴趣。\textbf{现任职于阿里巴巴集团。}
+
+% \section{\faGraduationCap\ 教育背景}
+\section{Education}
+\datedsubsection{\textbf{Waseda University}，Computer Science \& Communication，\textit{Master}}{2019.04 - 2021.03}
+\datedsubsection{\textbf{Beijing Institute of Technology}，Computer Science \& Technology，\textit{Bachelor}}{2014.09 - 2018.06}
+% \section{\faCogs\ IT 技能}
+\section{Skills}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}
+  \item \textbf{Programming Language}: C, C++, Python, Java(Android), Swift(iOS)
+  \item \textbf{Framework}: Doris(Apache); PyTorch, TensorFlow 1.x; OpenCV
+  \item \textbf{Keyword}: Data Warehouse / Machine Learning / Client Development
+\end{itemize}
+
+% \end{itemize}
+
+\section{Internship}
+\datedsubsection{\textbf{SOFTBRAIN Co., Ltd.}, iOS Engineer}{2019.08 - 2020.05}
+\begin{itemize}
+  \item Develop a business card detecting module with OpenCV in iOS, 1 teammate.
+  \item Transfer a part of the existing Objective-C code to Swift code, independently.
+  % \item 小组（2人）负责开发并优化iOS客户端名片识别模块（OpenCV）。
+  % \item 独立负责一部分原有的Objective-C项目向Swift的迁移。
+\end{itemize}
+
+\datedsubsection{\textbf{Amazon Japan}, Summer Internship}{2019.09}
+\begin{itemize}
+  \item Experience developing Amazon Alexa Skills.
+  % \item 体验Amazon Alexa Skills的开发。
+\end{itemize}
+
+\datedsubsection{\textbf{SOHU, Inc.}, Data Warehouse Engineer}{2018.12 - 2019.03}
+\begin{itemize}
+  \item Transfer existing data to Doris, including stability and performance testing, load balance, etc.
+  \item Learn the Kerberos protocol; Establish the Grafana server monitoring platform.
+  % \item 参与向Doris数据仓库平台的数据迁移过程。包含稳定性及迁移性能测试（JMeter）、负载平衡等。
+  % \item 学习Kerberos的安全通信过程；Grafana服务器监视平台的搭建；数据仓库Web前端的Debug。
+\end{itemize}
+
+% \datedsubsection{\textbf{DID-ACTE} 荷兰莱顿}{2015年3月 - 2015年6月}
+% \role{本科毕业设计}{LIACS 交换生}
+% 利用结巴分词对中国古文进行分词与词性标注，用已有领域知识训练形成 classifier 并对结果进行调优
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 利用结巴分词对中国古文进行分词与词性标注
+%   \item 利用已有领域知识训练形成 classifier, 并用分词结果进行测试反馈
+%   \item 尝试不同规则，对 classifier 进行调优
+% \end{itemize}
+% \end{onehalfspacing}
+
+\section{Paper \& Project}
+\datedsubsection{\textbf{Project Paper}, DEIM 2020}{2019.07 - 2020.03}
+\role{The collaboration of the Real Sakai Lab, Waseda University and Wider Planet, Inc.}{}
+《Purchase Prediction based on Recurrent Neural Networks with an Emphasis on Recent User Activities》
+\begin{itemize}
+  \item Use the BigTable of the Google Cloud Platform to analyze and process the Yoochoose dataset.
+  \item Suggest three kinds of user activity aggregating methods to predict user purchase activity in the Yoochoose dataset and evaluate the performance. 
+  % \item 利用Google Cloud Platform的BigTable进行Yoochoose数据集的处理及特征工程。
+  % \item 提出三种用户行为合并算法并检测其性能，在Yoochoose数据集上进行用户购买行为预测实验。
+\end{itemize}
+
+\datedsubsection{\textbf{Graduation Project}}{2018.01 - 2018.06}
+《Audio Recognition and Noise-Canceling based on RNN》
+\begin{itemize}
+  \item Build a 3-layer-GRU model to learn human voice features, extract clear human voices from noisy environments.
+  \item Build a Chinese Voice-Text dataset by drama and subtitles, including 100GB with 370000 wave files.
+  % \item 主要：构建3层GRU人声识别模型，过滤其他噪声，以输出清晰的人声，达到降噪目的。
+  % \item 附加：通过处理中文电视剧及其字幕，构造了100GB、包含约370000件的中文音频-文字数据集。
+\end{itemize}
+
+\datedsubsection{\textbf{TIIC National Undergraduate IoT Design Contest}}{2017.04 - 2017.09}
+《Intelligent Pram》
+\begin{itemize}
+  \item A pram model with sound location and auto obstacle avoidance features using 4 pieces of CC3200 boards.
+  \item Develop the supplementary Android application independently to control the pram's movement and features.
+  % \item 利用4块CC3200并构建局域网，完成了一个具有声音定位及自动避障移动等功能的婴儿车模型。
+  % \item 独自开发了配套的Android应用，以实现对婴儿车的移动控制及相关功能的使用。
+\end{itemize}
+
+
+\section{Contest and Awards}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}
+%   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
+  \item TIIC National Undergraduate IoT Design Contest, \textbf{National First Prize} \& \textbf{Best Popularity Prize}.
+  \item Programming Contests in Beijing Institute of Technology, \textbf{Third Prize} for several times.
+  \item Scholarship in Beijing Institute of Technology, \textbf{Third Prize} for several times.
+  % \item 2017年全国大学生物联网设计竞赛，\textbf{全国一等奖、最佳人气奖}
+  % \item 北京理工大学程序设计竞赛，\textbf{三等奖若干次}
+  % \item 北京理工大学，\textbf{三等奖学金若干次}
+%   \item 电视节目"爸爸去哪儿"可视化分析展示, \textit{https://hijiangtao.github.io/variety-show-hot-spot-vis/}
+\end{itemize}
+
+% \section{\faHeartO\ 项目/作品摘要}
+% \section{项目/作品摘要}
+% \datedline{\textit{An Integrated Version of Security Monitor Vis System}, https://hijiangtao.github.io/ss-vis-component/ }{}
+% \datedline{\textit{Dark-Tech}, https://github.com/hijiangtao/dark-tech/ }{}
+% \datedline{\textit{融合社交网络数据挖掘的电视节目可视化分析系统}, https://hijiangtao.github.io/variety-show-hot-spot-vis/}{}
+% \datedline{\textit{LeetCodeOJ Solutions}, https://github.com/hijiangtao/LeetCodeOJ}{}
+% \datedline{\textit{Info-Vis}, https://github.com/ISCAS-VIS/infovis-ucas}{}
+
+
+% \section{\faInfo\ 社会实践/其他}
+\section{Activities}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}
+  \item Server administrator and lab safety officer, Real Sakai Lab, Waseda University.
+  \item Class Vice-Monitor (4 years), Minister in the Student Union (1 year), Beijing Institute of Technology.
+  \item TOEFL iBT: 80; TOEIC: 750; JLPT N2: 161; Putonghua Proficiency Test: Level 1-B.
+  \item Road bike, Randonneurs 200KM; Accordion, Amateur Grade 8th.
+  \item GitHub: https://github.com/ShinoharaYuuyoru
+  \item LinkedIn: https://www.linkedin.com/in/quanyu-piao/
+  \item Blog: https://shinoharayuuyoru.github.io/
+  % \item 早稻田大学Real Sakai Lab，服务器管理员、安全员。
+  % \item 北京理工大学，07111403班副班长（4年）；计算机学院学生会文体部部长（1年）。
+  % \item TOEFL iBT：80；TOEIC：750；日本语能力测试（JLPT）N2：161；普通话水平测试：一级乙等
+  % \item 公路自行车，不间断骑行200KM挑战证书；手风琴，业余8级。
+  % \item GitHub: https://github.com/ShinoharaYuuyoru
+  % \item LinkedIn: https://www.linkedin.com/in/quanyu-piao/
+  % \item 博客：https://shinoharayuuyoru.github.io/
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
